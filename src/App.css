@@ -1,38 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap");
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: rgb(236, 235, 220);
+  font-family: "Sora";
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #2b7148;
   color: white;
+  padding: 1em;
 }
 
-.App-link {
-  color: #61dafb;
+.brasileirao {
+  font-size: 35px;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login {
+  display: flex;
+  justify-content: center;
+}
+
+.login > div > input{
+  margin-right: 1.5em;
+  padding: 0.3em;
+  border-radius: 0.5em;
+  border: 0em;
+}
+
+.login > button {
+  background-color: #04375c;
+  color: white;
+  border: 0em;
+  border-radius: 0.5em;
+  padding-right: 2em;
+  padding-left: 2em;
+}
+
+.divcorpo{
+  display: flex;
+  justify-content: space-around;
+  padding: 2em;
+}
+
+.cabeca {
+  background-color: rgb(138, 185, 157);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em;
+}
+
+.cabeca > .divrodada{
+  display: flex;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+.tabela-rodadas > .divtime {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 150px 40px 10px 40px 150px auto;
+  row-gap: 1em;
+  padding: 1em;
+  align-items: center;
+}
+
+.numero {
+  font-size: 1.6em;
+}
+
+.cabecaclassif{
+  font-size: 1em;
+  font-weight: bold;
+  background-color: rgb(138, 185, 157);
+  display: grid;
+  grid-template-columns: auto 200px auto auto auto auto auto auto auto;
+  align-items: center;
+}
+
+.cabecaclassif > div {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  font-size: 1.2em;
+}
+
+.time{
+  display: grid;
+  grid-template-columns: auto 250px 50px 55px 60px 65px 65px 65px 70px;
+  align-items: center;
+  padding: 0.5em;
+  background-color: white;
+}
+
+.editar {
+  border-radius: 3em;
+  background-color: rgb(138, 185, 157);
 }
